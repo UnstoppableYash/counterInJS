@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url(assets/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container {
+  width: 30rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+.counting h1 {
+  color: white;
+  font-size: 7rem;
+}
+.counting .reset {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.counting .reset:hover {
+  padding: 0.3rem 1.5rem;
+}
+.buttons button {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.3rem 1rem;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.buttons .add {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+.buttons .subtract {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+}
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 570px) {
+  .main-container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 412px) {
+  .main-container {
+    width: 17rem;
+    height: 20rem;
+  }
+  .counting h1 {
+    color: white;
+    font-size: 5rem;
+  }
+  .buttons button {
+    padding: 0.2rem 0.8rem;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+}
+@media screen and (max-width: 357px) {
+  .main-container {
+    width: 15rem;
+    height: 20rem;
+  }
+  .counting h1 {
+    color: white;
+    font-size: 4rem;
+  }
+  .buttons button {
+    padding: 0.2rem 0.8rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .buttons .add {
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+  }
+  .buttons .subtract {
+    position: absolute;
+    bottom: -1.5rem;
+    right: -1.5rem;
+  }
+}
